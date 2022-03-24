@@ -1,0 +1,23 @@
+main {
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+
+.main__titulares{
+   font-size: 24px;
+   text-align: center;
+}
+
+.main__precios{
+    font-size: 18px;
+ 
+}
+
+.main__descuentos-descripciones{
+    font-size: 16px;
+}
