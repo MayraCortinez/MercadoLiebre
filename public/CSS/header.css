@@ -21,7 +21,7 @@ header{
     font-weight: bolder;
 }
 
-.header__menu{
+#header__menu a{
     color: black;
     font-size: 12px;
     line-height: 20px;
