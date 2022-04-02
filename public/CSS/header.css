@@ -1,24 +1,28 @@
-header{
-    background-color: yellow;
+.header__entero{
+    background-color: var(--amarillo);
 }
 
-.header__logo{
-    width: 150px;
-    height: 50px;
-    background-image: url('/images/logo-mercado-liebre.svg');
-    background-repeat: no-repeat;
+.header__encabezado{
     margin-left: 20px;
-    margin-top: 20px;
+}
+
+
+.header__logo{
+    padding-top: 20px;
+    width: 50%;
+
 }
 
 .header__busqueda{
-    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .header__primerTexto{
     font-size: 12px;
-    margin-left: 40px;
     font-weight: bolder;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 #header__menu a{
@@ -26,19 +30,23 @@ header{
     font-size: 12px;
     line-height: 20px;
     font-weight: bolder;
+    text-decoration: none;
+    list-style: none;
 }
 
-.header__burger{ 
+.header__menú-íconos{
+    padding-top: 20px;
+}
+
+#header__burger{ 
     display: block;
     padding: 5px;
-    width: 50px;
-    font-size: 30px;
-    background-color: rgba(0,0,255,1);
+    width: 40px;
     color: white;
+    background-color: var(--celeste);
     border-radius: 5px;
     border: none;
-    margin: 0 auto 30px;
-    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 25px;
 }
-
-

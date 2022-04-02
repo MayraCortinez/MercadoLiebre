@@ -1,18 +1,28 @@
 footer{
+
     width: 100%;
     font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    color: var(--gris-oscuro);
 }
 
-.footer__textoFinal{
-    text-align: center;
-    padding: 20px;
+footer section{
+    padding: 20px 20px;
 }
+
+.footer__icono i{
+    font-size: 2em;
+    color:blue;
+    margin-bottom: 10px;
+}
+
+footer h4{
+    font-size: var(--descuentos-descripciones);
+}
+
 
 .footer__pie{
     text-align: left;
-}
-.footer__icono{
-    size: 2em;
-    margin: 40px 140px 10px 140px;
-    color:blue;
+    padding: 0 10px;
 }
