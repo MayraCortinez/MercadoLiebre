@@ -1,4 +1,5 @@
 .header__entero{
+    margin: 0px auto;
     background-color: var(--amarillo);
 }
 
@@ -19,13 +20,14 @@
 }
 
 .header__primerTexto{
-    font-size: 12px;
+    font-size: var(--texto);
     font-weight: bolder;
     padding-bottom: 10px;
     text-align: center;
 }
 
 #header__menu a{
+    display: none;
     color: black;
     font-size: 12px;
     line-height: 20px;
@@ -41,12 +43,32 @@
 #header__burger{ 
     display: block;
     padding: 5px;
-    width: 40px;
+    width: 60px;
     color: white;
     background-color: var(--celeste);
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
-    margin: 10px auto;
+    margin: 0px auto;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
+}
+
+/* tablets */
+@media (min-width: 460px){
+    #header__burger{ 
+        display: none;
+    }
+    #header__menu a{
+        display: block;
+    }
+}
+
+/* desktop */
+@media (min-width: 769px){
+    #header__burger{ 
+        display: none;
+    }
+    #header__menu a{
+        display: block;
+    }
 }
