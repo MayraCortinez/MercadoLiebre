@@ -7,13 +7,10 @@ footer{
     color: var(--gris-oscuro);
 }
 
-footer section{
-    padding: 20px 20px;
-}
 
 .footer__icono i{
     font-size: 2em;
-    color:blue;
+    color: var(--azul);
     margin-bottom: 10px;
 }
 
@@ -21,9 +18,11 @@ footer h4{
     font-size: var(--descuentos-descripciones);
 }
 
-
-.footer__final{
-    margin-top: 100px;
+footer section {
+    padding: 30px 40px;
+}
+.footer__final {
+    margin-top: 40px;
     text-align: left;
     padding: 0 10px;
 }
