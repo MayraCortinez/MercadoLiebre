@@ -1,19 +1,16 @@
-.register {
+.login {
     background-color: var(--amarillo);
     width: 100%;
 }
 
-.register h1 {
+.login h1 {
     color: var(--azul);
     text-align: center;
     text-shadow: 2px 2px 2px var(--gris-oscuro);
 }
 
-.register span {
-    color: var(--rojo);
-}
 
-.register .formulario {
+.login .formulario {
     background-color: var(--gris-claro);
     width: 80%;
     display: flex;
@@ -25,22 +22,12 @@
     flex-direction: column;
 }
 
-.register .container {
+.login .container {
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
-.register .container-row {
-    padding: 20px;
-    line-height: 2;
-}
-
-.register .categorias {
-    padding-left: 40%;
-    display: inline-block;
-    line-height: 2;
-}
 
 .botones {
     display: flex;
@@ -59,18 +46,18 @@
 
 }
 
-.register .register__logo img {
+.login .login__logo img {
     margin: 20px 10px 10px;
 }
 
 @media (min-width: 460px) {
-    .register .formulario {
+    .login .formulario {
         width: 60%;
     }
 }
 
 @media (min-width: 769px) {
-    .register .formulario {
+    .login .formulario {
         width: 40%;
     }
 }

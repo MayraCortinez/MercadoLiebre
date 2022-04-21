@@ -93,7 +93,7 @@ header{
     }
     #header__menu nav{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         flex: content;
     }
     #header__menu li{

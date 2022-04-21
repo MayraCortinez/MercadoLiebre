@@ -1,62 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'"></script>
+    <script src="https://kit.fontawesome.com/46efef2c4e.js" crossorigin="anonymous"></script>
     <title>Register</title>
 </head>
-<body>
-    <form action="/register.html" method="POST">
-        <div class="container">
-              <label for="nombre">Nombre y Apellido:</label>
-              <input type="text" name="nombre" id="nombre">
-              <span class="register_text-error">*Obligatorio</span>
-        </div>
-       <div class="container">
-            <label for="usuario">Usuario:</label>
-            <input type="text" name="usuario" id="usuario">
-            <span class="register_text-error">*Obligatorio</span>
-        </div>
-       <div class="container">
-              <label for="email">E-mail:</label>
-              <input type="email" name="email" id="email">
-              <span class="register_text-error">*Obligatorio</span>
-        </div>
-       <div class="container">
-              <label for="password">Contraseña:</label>
-              <input type="password" name="password" id="password">
-              <span class="register_text-error">*Obligatorio</span>
-        </div>
-       <div class="container">
-            <label for="date">Fecha de nacimiento:</label>
-            <input type="date" name="fecha" min="1930-01-01" max="2018-01-01" id="date" required>
-        </div>
-       <div class="container">
-            <label for="avatar">Foto de perfil</label>
-            <input type="file" name="avatar" accept=".jpg">
-        </div>
-       <div class="container">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" name="telefono" id="telefono">
-        </div>
-       <div class="container">
-            <label for="direccion">Dirección</label>
-            <input type="address-line1" name="direccion" id="direccion">
-        </div>
-       <div class="container">
-            <label>Busco</label>
-            <label> <input type="radio" name="perfil" value="Vender"></label> Vender
-           <label><input type="radio" name="perfil" value="Comprar"></label> Comprar
-        </div>
-        <div class="container">
-            <label>Categorías de interés</label> <br>
-            <label> <input type="checkbox" name="categorias" value="Electro"></label> Electro
-           <label><input type="checkbox" name="categorias" value="Moda"></label> Moda 
-           <label><input type="checkbox" name="categorias" value="Hogar"></label> Hogar
-           <label><input type="checkbox" name="categorias" value="Juguetería"></label> Juguetería
-           <label><input type="checkbox" name="categorias" value="Vida sana"></label>Vida sana
-        </div>
-      </form>
+
+<body class="register">
+    <h1>Bienvenido</h1>
+    <section class="formulario">
+        <form action="/" method="get">
+            <div class="container">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" name="nombre" id="nombre" minlength="5">
+                <span class="register_text-error">*Obligatorio</span>
+            </div>
+            <div class="container">
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" minlength="5">
+                <span class="register_text-error">*Obligatorio</span>
+            </div>
+            <div class="container">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <span class="register_text-error">*Obligatorio</span>
+            </div>
+            <div class="container">
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" minlength="8">
+                <span class="register_text-error">*Obligatorio</span>
+            </div>
+            <div class="container">
+                <label for="password"></label>
+                <input class="register__form-input" type="password" id="password" name="password"
+                    placeholder="Repetir Contraseña" minlength="8">
+                <span class="register__text-error">*Obligatorio</span>
+            </div>
+            <div class="container">
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" min="1930-01-01" max="2018-01-01" id="date">
+            </div>
+            <div class="container">
+                <label for="avatar">Foto de perfil</label>
+                <input type="file" name="avatar" accept=".jpg">
+            </div>
+            <div class="container">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" minlength="10" maxlength="10">
+            </div>
+            <div class="container">
+                <label for="direccion">Dirección</label>
+                <input type="address-line1" name="direccion" id="direccion">
+            </div>
+            <div class="container-row">
+                <label>Busco: <br> </label>
+                <label> <input type="radio" name="perfil" value="Vender"></label> Vender
+                <label><input type="radio" name="perfil" value="Comprar"></label> Comprar
+            </div>
+            <div class="container">
+                <label>Me interesa:</label>
+                <div class="categorias"><label> <input type="checkbox" name="categorias" value="Electro"></label>
+                    Electro </div>
+                <div class="categorias"><label><input type="checkbox" name="categorias" value="Moda"></label> Moda
+                </div>
+                <div class="categorias"><label><input type="checkbox" name="categorias" value="Hogar"></label> Hogar
+                </div>
+                <div class="categorias"><label><input type="checkbox" name="categorias" value="Juguetería"></label>
+                    Juguetería </div>
+                <div class="categorias"><label><input type="checkbox" name="categorias" value="Vida sana"></label> Vida
+                    sana </div>
+            </div>
+            <div class="botones">
+                <button type="reset">Cancelar</button>
+                <a href="/"><button type="submit">Registrarme</button></a>
+            </div>
+        </form>
+    </section>
+    <div class="register__logo">
+        <img src="/images/logo-mercado-liebre.svg" alt="logo">
+    </div>
 </body>
+
 </html>
