@@ -1,33 +1,33 @@
-main {
+.home main {
     margin: 0px auto;
     background-color: var(--gris-claro);
 
 }
 
-main section{
+.home main section {
     width: 100%;
     padding: 15px;
 }
 
-main section article{
+.home main section article {
     margin: 10px 0;
     background-color: white;
 }
 
-.main__image{
+.home .main__image {
     text-align: center;
 }
 
 /*Titulares*/
-main h2{
+.home main h2 {
     padding-left: 14px;
     color: var(--gris-oscuro);
     font-size: var(--titulares);
     font-weight: bolder;
- }
+}
 
- /*camión*/
-.main__truck{
+/*camión*/
+.home .main__truck {
     color: var(--verde);
     display: block;
     font-size: 16px;
@@ -42,45 +42,57 @@ main h2{
     top: -15px;
 }
 
-.main__detalle{
+.home .main__truck:hover {
+    transform: rotateZ(260deg);
+    transition: 0.9s;
+}
+
+.home .main__detalle {
     padding: 15px 0;
     border: 1px solid var(--gris-claro);
     position: relative;
 }
 
-main p{
+.home main p {
     font-size: var(--precios);
 }
 
-main span, h4{
+.home main span,
+h4 {
     font-size: var(--descuentos-descripciones);
 }
 
 /*Descuentos*/
-main span{
+.home main span {
     color: var(--verde);
 }
 
 /*Nombre productos*/
-main h4{
+.home main h4 {
     display: block;
     padding-top: 10px;
     color: var(--gris-oscuro);
     margin-left: 14px;
+    visibility: hidden;
 }
 
-.main__precios-descuentos{
+.home .main__detalle:hover h4 {
+    visibility: visible;
+}
+
+.home .main__precios-descuentos {
     display: flex;
 }
-.main__precios-descuentos p{
+
+.home .main__precios-descuentos p {
     width: 30%;
     margin-right: 20px;
 }
 
 
 /* tablets */
-@media (min-width: 460px){
-    .main__banner{
+@media (min-width: 460px) {
+    .home .main__banner {
         display: block;
         background-image: url('/images/img-home-banner.jpg');
         background-size: cover;
@@ -88,44 +100,45 @@ main h4{
         height: 30%;
     }
 
-    main section article{
+    .home main section article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .primer-bloque-art, .segundo-bloque-art{
+    .home .primer-bloque-art,
+    .segundo-bloque-art {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
 
     }
 
-    .main__image img{
+    .home .main__image img {
         width: 100%;
     }
 
-    article{
+    .home article {
         width: 40%;
     }
 
-    .main__precios-descuentos p{
+    .home .main__precios-descuentos p {
         margin-right: 40px;
     }
 
 }
 
 /* desktop */
-@media (min-width: 769px){
+@media (min-width: 769px) {
 
-    .main__image img{
+    .home .main__image img {
         width: 100%;
     }
-    
-    article{
+
+    .home article {
         width: 20%;
         justify-content: space-between;
     }
 
-    .main__precios-descuentos p{
-    margin-right: 40px;
-}
+    .home .main__precios-descuentos p {
+        margin-right: 40px;
+    }
 }
